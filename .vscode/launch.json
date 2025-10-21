@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Executar API",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/Api/bin/Debug/net9.0/Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Api",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": "Executar Test",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/Test/bin/Debug/net9.0/Test.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Test",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}
