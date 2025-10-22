@@ -8,6 +8,11 @@ A aplicação é composta por uma API principal que realiza autenticação via l
 
 ---
 
+## 📦 Link para Testar a Api
+
+http://18.231.253.103/swagger/index.html
+
+---
 ## 🔄 Fluxo de Comunicação
 
 1. O cliente envia uma requisição de login para o Nginx.  
@@ -51,9 +56,3 @@ A aplicação é composta por uma API principal que realiza autenticação via l
 - dotnet-ef CLI
 
 ---
-
-## 📦 Link para Testar a Api
-
-http://18.231.253.103/swagger/index.html
-
-
