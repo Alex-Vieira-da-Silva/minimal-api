@@ -15,6 +15,8 @@ using MinimalApi.Dominio.DTOs;
 using minimal_api.Dominio.ModelViews;
 using MinimalApi.Dominio.DTOs.Enuns;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using Microsoft.Extensions.Options;
 
 public class Startup
 {
@@ -96,8 +98,22 @@ public class Startup
             );
         });
 
+
         // Controllers
         services.AddControllers();
+
+        services.AddCors(Options =>
+       {
+           Options.AddDefaultPolicy(
+               builder =>
+               {
+                   builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+               }
+           );
+       });
+
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -107,7 +123,8 @@ public class Startup
         app.UseRouting();
         app.UseAuthentication();
         app.UseAuthorization();
-        
+
+        app.UseCors();
 
         app.UseEndpoints(endpoints =>
         {
