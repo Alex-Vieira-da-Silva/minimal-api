@@ -52,9 +52,8 @@ A aplicação é composta por uma API principal que realiza autenticação via l
 
 ---
 
-## 📦 Instalação
+## 📦 Link para Testar a Api
 
-```bash
-git clone https://github.com/seu-usuario/minimal-api.git
-cd minimal-api/Api
-dotnet restore
+http://18.231.253.103/swagger/index.html
+
+
