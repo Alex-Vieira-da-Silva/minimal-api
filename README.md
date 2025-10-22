@@ -1,6 +1,5 @@
 # 🚀 Minimal API - Autenticação de Administradores
 
----
 
 ## 🧠 Visão Geral da Arquitetura
 
