@@ -20,7 +20,6 @@ http://18.231.253.103/swagger/index.html
 3. A API valida as credenciais do administrador.  
 4. Se válidas, retorna os dados ou token de autenticação.  
 5. Todas as informações são persistidas em um banco de dados relacional.
-6. 
 ---
 ### 🧩 Componentes Principais
 
